@@ -1,0 +1,22 @@
+==========Script de criação das tabelas Utilizadas==========
+
+CREATE TABLE  `sgri`.`sg_sala` (
+  `COD_SALA` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `DESC_SALA` varchar(45) NOT NULL,
+  `LOCALIZACAO_SALA` varchar(45) NOT NULL,
+  `CAPACIDADE` int(10) unsigned NOT NULL,
+  `TIPO_SALA` varchar(45) NOT NULL,
+  `OBSERVACAO` varchar(45) CHARACTER SET latin1 COLLATE latin1_bin DEFAULT NULL,
+  PRIMARY KEY (`COD_SALA`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+
+
+CREATE TABLE  `sgri`.`sg_equipamento` (
+  `COD_EQUIPAMENTO` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `COD_PATRIMONIO` int(10) unsigned NOT NULL,
+  `DESC_EQUIPAMENTO` varchar(60) NOT NULL,
+  `STATUS_EQUIPAMENTO` int(10) unsigned NOT NULL,
+  `TIPO_EQUIPAMENTO` varchar(45) NOT NULL,
+  PRIMARY KEY (`COD_EQUIPAMENTO`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
